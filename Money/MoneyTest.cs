@@ -118,5 +118,12 @@ namespace Money
             Money result = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.MakeDollar(20), result);
         }
+
+        //[Test]
+        //public void PlusSameCurrencyReturnsMoney()
+        //{
+        //    Expression sum = Money.MakeDollar(1).Plus(Money.MakeDollar(1));
+        //    Assert.That(sum is Money);
+        //}
     }
 }
